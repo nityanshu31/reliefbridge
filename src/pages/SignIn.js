@@ -70,6 +70,7 @@ function SignIn() {
     alignItems: 'center',
     height: '100vh',
     backgroundColor: '#f0f0f0',
+    flexDirection: 'column',
   };
 
   const formStyle = {
@@ -104,8 +105,28 @@ function SignIn() {
     marginBottom: '10px',
   };
 
+  const noteStyle = {
+    backgroundColor: '#ffeb3b',
+    padding: '10px',
+    borderRadius: '5px',
+    marginBottom: '15px',
+    textAlign: 'center',
+    fontSize: '14px',
+    maxWidth: '350px',
+  };
+
   return (
     <div style={containerStyle}>
+      <div style={noteStyle}>
+        <strong>Note:</strong> Backend is currently not available. Use the following test credentials:<br />
+        <strong>User:</strong> user123 / user12345<br />
+        <strong>Volunteer:</strong> volunteer123 / volunteer123<br />
+        <strong>Hospitality:</strong> hospitality123 / hospitality123<br />
+        <strong>Retail:</strong> retail123 / retail123<br />
+        <strong>Finance:</strong> finance123 / finance123<br />
+        <strong>Admin:</strong> admin123 / admin123
+      </div>
+
       <form onSubmit={handleSubmit} style={formStyle}>
         <h2>Sign In</h2>
 
