@@ -9,7 +9,7 @@ function SignIn() {
 
   // Dummy user data for roles (replace this with actual backend/API calls)
   const dummyUserData = {
-    'user123': { password: 'user123', role: 'user' },
+    'user123': { password: 'user12345', role: 'user' },
     'volunteer123': { password: 'volunteer123', role: 'volunteer' },
     'hospitality123': { password: 'hospitality123', role: 'hospitality' },
     'retail123': { password: 'retail123', role: 'retail' },
